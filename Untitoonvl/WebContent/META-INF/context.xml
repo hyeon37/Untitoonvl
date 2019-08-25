@@ -1,0 +1,11 @@
+<context>
+	<Resource name="jdbc/OracleDB" auth="Container" type="javax.sql.DataSource"
+	username="UNTITOONVL" password="1234" driverClassName="oracle.jdbc.driver.OracleDriver"
+	factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory"
+	url="jdbc:oracle:thin:@localhost:1521:xe"
+	maxTotal="100"
+	maxIdle="20"/>
+<!-- 	auth - 데이터 인증(Container:톰캣서버) / type - 클래스 <= connection pool 생성
+		factory - 패키지 위치
+		maxTotal - 최대접속자수 / maxIdle - 기본 생성 접속	 -->
+</context>
